@@ -51,7 +51,7 @@ var Location = function(data) {
 ***********************************************/
 
   // FourSquare URL
-  var fsURL = 'https://api.foursquare.com/v2/venues/search?v=20180101&ll=' + this.location.lat + ',' + this.location.lng + '&client_id=' + clientId + '&client_secret=' + clientSecret + '&query=' + this.search
+  var fsURL = 'https://api.foursquare.com/v2/venues/search?v=20180101&ll=' + this.location.lat + ',' + this.location.lng + '&client_id=' + clientId + '&client_secret=' + clientSecret + '&query=' + this.search;
 
   // Parse returned string into JSON using jQuery
   $.getJSON(fsURL).done(function(data) {
@@ -82,7 +82,7 @@ var Location = function(data) {
     // If an info window is already open, close it
     if (windowOpen) {
       windowOpen.close();
-    };
+    }
 
     // Content for info window
     var markerContent = [
@@ -103,7 +103,7 @@ var Location = function(data) {
     // Make icon bounce then stop
     self.marker.setAnimation(google.maps.Animation.BOUNCE);
     setTimeout(function() {
-      self.marker.setAnimation(null)
+      self.marker.setAnimation(null);
     }, 2110);
   });
 };
@@ -136,7 +136,7 @@ function myViewModel() {
       return include;
     }, this);
   }, this);
-};
+}
 
 // Error net for failed google maps response
 googleFail = function googleFail() {
@@ -146,4 +146,4 @@ googleFail = function googleFail() {
 // Initialize the app!
 function init() {
   ko.applyBindings(new myViewModel());
-};
+}

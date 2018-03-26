@@ -11,7 +11,9 @@ To get started, download the files provided within the repo.
 ## Running the Program
 
 Once the files are downloaded, simply open a browser and paste in the folder directory that contains the index.html, with index.html appended to the directory.
+```
 i.e. C:\School\Neighborhood Map\index.html
+```
 You will then have access to the app, the map, and the ability to explore Calgary!
 
 ## Resources Used

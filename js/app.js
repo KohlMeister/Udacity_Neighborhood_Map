@@ -39,7 +39,6 @@ var Location = function(data) {
 
   $.getJSON(searchURL).done(function(data) {
     if (data.stat == 'ok') {
-      var imageUrl, flickrPhotoInfoUrl, originalImgSrc;
       self.foto = data.photos.photo.id[1]
     }
     //var photoURL = 'https://api.flickr.com/services/rest/?&method=flickr.photos.getsizes&photo_id='+photoId+'&format=json&api_key='+flickrId
